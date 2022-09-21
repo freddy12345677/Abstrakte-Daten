@@ -2,18 +2,61 @@
 public class Test {
 
 	public static void main(String[] args) {
-		ArrayStack stack = new ArrayStack();
-		ArrayStack stackTmp = new ArrayStack();
+		ArrayQueue queue = new ArrayQueue();
 		
+		queue.enqueue(10);
+		
+		queue.enqueue(3);
+		queue.dequeue();
+		
+	    System.out.println(queue.start);
+	    System.out.println(queue.end);
+		
+		
+		
+		queue.enqueue(4);
+		queue.enqueue(5);
+		queue.dequeue();
+		System.out.println(queue.front());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		ArrayStack stack = new ArrayStack();
+//		ArrayStack stack2 = new ArrayStack();
+//		
+//
+//		stack.push(12);
+//		stack.push(13);
+//		stack.push(14);
+//		stack.push(100);
+//		
+//		stack2.push(33);
+//		stack2.push(10);
+//		stack2.push(88);
+//		
+//		ArrayStack stackMerged = stack.append(stack2);
+//		while(stackMerged.empty()==false) {
+//			System.out.println(stackMerged.top());
+//			stackMerged.pop();
+//		}
 
-		stack.push(12);
-		stack.push(13);
-		stack.push(14);
-		stack.push(100);
+//		ArrayStack stackCopy = stack.copy();
 
-		ArrayStack stackCopy = stack.copy();
-
-		System.out.println(stackCopy.top());
+//		System.out.println(stackCopy.top());
 
 //		
 //		ListenElement element1 = new ListenElement(4);

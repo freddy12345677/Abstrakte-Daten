@@ -56,16 +56,26 @@ public class ArrayStack {
 		System.out.println("copy2 complete");
 		return stackCopyyy;
 	}
+	
+	
 	public ArrayStack append(ArrayStack stack2) {
 		ArrayStack stackTmp = new ArrayStack();
 		while(stack2.empty() == false) {
+			stackTmp.push(stack2.top());
+			stack2.pop();
+			System.out.println("hinzugefügt");
 			
-			stackTmp = new ArrayStack
 			
 			
+			
+		}while(stackTmp.empty() == false) {
+			push(stackTmp.top());
+			stack2.push(stackTmp.top());
+			stackTmp.pop();
+			System.out.println("merged");
 		}
 		
-		return null;
+		return this;
 	}
 
 }
